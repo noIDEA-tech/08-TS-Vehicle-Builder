@@ -170,7 +170,7 @@ class Cli {
         },
         {
           type: 'input',
-          name: 'weight',
+          name: 'towingCapacity',
           message: 'Enter Towing Capacity',
         },
       ])
@@ -179,22 +179,22 @@ class Cli {
 // TODO: push the truck to the vehicles array
 // TODO: set the selectedVehicleVin to the vin of the truck
 // TODO: perform actions on the truck
-      .then((answers) => {
-        const truck = new Truck(
-          Cli.generateVin(),
-          answers.color,
-          answers.make,
-          answers.model,
-          parseInt(answers.year),
-          parseInt(answers.weight),
-          [new Wheel(parseInt(answers.wheels))],
-          parseInt(answers.towingCapacity),
-          []
-        )
+.then((answers) => {
+  const truck = new Truck(
+    Cli.generateVin(),
+    answers.color,
+    answers.make,
+    answers.model,
+    parseInt(answers.year),
+    parseInt(answers.weight),
+    parseInt(answers.topSpeed),
+    [],
+    parseInt(answers.towingCapacity)
+  );
       this.vehicles.push(truck);
       this.selectedVehicleVin = truck.vin;
       this.performActions();
-        });
+    });
   }
 
 // method to create a motorbike
@@ -267,7 +267,7 @@ class Cli {
   // method to find a vehicle to tow
   // TODO: add a parameter to accept a truck object
   
-  findVehicleToTow(): void {
+  findVehicleToTow(truck: Truck): void {
     inquirer
       .prompt([
         {
