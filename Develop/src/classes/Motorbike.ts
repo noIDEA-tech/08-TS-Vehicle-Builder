@@ -1,12 +1,8 @@
 // Importing Vehicle and Wheel classes
-import inquirer from 'inquirer';
+// import inquirer from 'inquirer';
 import Vehicle from './Vehicle.js';
 import Wheel from './Wheel.js';
 
-// TODO: The Motorbike class should extend the Vehicle class
- // TODO: Declare properties of the Motorbike class
-  // TODO: The properties should include vin, color, make, model, year, weight, top speed, and wheels
-  // TODO: The types should be as follows: vin (string), color (string), make (string), model (string), year (number), weight (number), topSpeed (number), wheels (Wheel[])
 class Motorbike extends Vehicle {
   vin: string;
   color: string;
@@ -17,7 +13,7 @@ class Motorbike extends Vehicle {
   topSpeed: number;
   wheels: Wheel[];
 
-  // TODO: Create a constructor that accepts the properties of the Motorbike class
+
     constructor(
       vin: string,
       color: string,
@@ -29,8 +25,8 @@ class Motorbike extends Vehicle {
       wheels: Wheel[]
     ) {
     
-        // TODO: The constructor should call the constructor of the parent class, Vehicle
-      super();
+    // TODO: The constructor should call the constructor of the parent class, Vehicle
+        super();
     // TODO: The constructor should initialize the properties of the Motorbike class
     this.vin = vin;
     this.color = color;
@@ -48,16 +44,13 @@ class Motorbike extends Vehicle {
     }
   }
   // TODO: Implement the wheelie method
- createWheelie(): void {
-  inquirer
-  .prompt([
-
-  ])
- }
   // TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
-  wheelie() {
-  console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
-}
+ wheelie(): void {
+  
+    console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
+  };
+
+
   // TODO: Override the printDetails method from the Vehicle class
   override printDetails(): void {
     super.printDetails();
@@ -71,10 +64,18 @@ class Motorbike extends Vehicle {
     console.log(`Color: ${this.color}`);
     console.log(`Wheels ${this.wheels}`);
   }
-  // TODO: The method should call the printDetails method of the parent class
-  // TODO: The method should log the details of the Motorbike
-  // TODO: The details should include the VIN, make, model, year, weight, top speed, color, and wheels
-}
+} 
 
-// Export the Motorbike class as the default export
 export default Motorbike;
+
+//from lines 6-9
+// TODO: The Motorbike class should extend the Vehicle class
+// TODO: Declare properties of the Motorbike class
+// TODO: The properties should include vin, color, make, model, year, weight, top speed, and wheels
+// TODO: The types should be as follows: vin (string), color (string), make (string), model (string), year (number), weight (number), topSpeed (number), wheels (Wheel[])
+//from line 16
+// TODO: Create a constructor that accepts the properties of the Motorbike class
+// TODO: The method should call the printDetails method of the parent class
+// TODO: The method should log the details of the Motorbike
+// TODO: The details should include the VIN, make, model, year, weight, top speed, color, and wheels
+// Export the Motorbike class as the default export
