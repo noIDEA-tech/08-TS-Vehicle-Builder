@@ -436,7 +436,8 @@ class Cli {
                     // Check if the vehicle is a Motorbike and has a wheelie method
               if (this.vehicles[i] instanceof Motorbike && 'wheelie' in this.vehicles[i]) {
                   (this.vehicles[i] as Motorbike).wheelie();
-                 
+                  
+              
                   // break; // Exit the loop after finding and performing the action
               } else {
                   console.log('Only motorbikes can do a wheelie!');

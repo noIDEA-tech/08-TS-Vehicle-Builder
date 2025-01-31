@@ -28,9 +28,9 @@ THEN I can perform additional actions until I choose to exit
 
 ## Video Demonstration
 
-```md
-https://drive.google.com/file/d/1teOnvWZYrGliWQmC2ef8nvd4V12dH5hm/view?usp=sharing
-```
+https://drive.google.com/file/d/1sPwUh0Ibi4VFQwuLjpwkX_nOj7wdEazu/view
+
+ 
 ![app_image](Mockup.png)
 
 ## Table of Contents
@@ -41,10 +41,10 @@ https://drive.google.com/file/d/1teOnvWZYrGliWQmC2ef8nvd4V12dH5hm/view?usp=shari
 - [Features](#features)
 - [Tests](#tests)
 - [Contact](#contact)
-
+ 
 ## Installation
 Node.js, TypeScript.js, npm init, npm inquirer
-
+ 
 ## Usage
 Run 'npm start' in Integrated Terminal
 
